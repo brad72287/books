@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Duplex
+    </title>
+  </head>
+  <body>
+    <link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css'>
+    <link rel='stylesheet' type='text/css' href='http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css'>
+    <script type='text/javascript' charset='utf8' src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js'>
+    </script>
+    <script type='text/javascript' charset='utf8' src='http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js'>
+    </script>
+    <h3>'Better' Book List
+    </h3>
+    <p>This is definitely a thing. I should write a description of what this is.
+    </p>
+    <table cellpadding='0' cellspacing='0' border='0' class='dataTable' id='example'>
+      <thead>
+        <tr>
+          <th>Title
+          </th>
+          <th>Author
+          </th>
+          <th>Year
+          </th>
+          <th>Pages
+          </th>
+          <th>Rating Mean
+            <sub> (Rating Count)
+            </sub>
+          </th>
+          <th>Rating Variance
+          </th>
+          <th>
+            <a href='https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests'>Flesch-Kincaid Tests
+            </a>
+          </th>
+          <th>
+            <a href='https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index'>Coleman-Liau Index
+            </a>
+          </th>
+          <th>Writing Sample Wordcount
+          </th>                  
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>To Kill a Mockingbird
+          </td>
+          <td>Harper Lee
+          </td>
+          <td>1960
+          </td>
+          <td>324
+          </td>
+          <td>4.278 
+            <sub>(4760687)
+            </sub>
+          </td>
+          <td>0.871
+          </td>
+          <td>79.5 
+            <sub>(6.4)
+            </sub>
+          </td>
+          <td>7.25
+          </td>
+          <td>890
+          </td>
+        </tr>
+        <tr>
+          <td>Pride and Prejudice
+          </td>
+          <td>Jane Austen
+          </td>
+          <td>1813
+          </td>
+          <td>279
+          </td>
+          <td>4.269 
+            <sub>(3195988)
+            </sub>
+          </td>
+          <td>0.972
+          </td>
+          <td>71.85 
+            <sub>(7.3)
+            </sub>
+          </td>
+          <td>7.25
+          </td>
+          <td>944
+          </td>
+        </tr>
+        <tr>
+          <td>1984
+          </td>
+          <td>George Orwell
+          </td>
+          <td>1949
+          </td>
+          <td>237
+          </td>
+          <td>4.19 
+            <sub>(3373364)
+            </sub>
+          </td>
+          <td>0.918
+          </td>
+          <td>67.96 
+            <sub>(6.7)
+            </sub>
+          </td>
+          <td>8.28
+          </td>
+          <td>652
+          </td>
+        </tr>
+        <tr>
+          <td>The Lord of the Rings
+          </td>
+          <td>J.R.R. Tolkien
+          </td>
+          <td>1955
+          </td>
+          <td>1216
+          </td>
+          <td>4.498 
+            <sub>(590760)
+            </sub>
+          </td>
+          <td>0.678
+          </td>
+          <td>81.73 
+            <sub>(5.6)
+            </sub>
+          </td>
+          <td>6.31
+          </td>
+          <td>672
+          </td>
+        </tr>
+        <tr>
+          <td>The Great Gatsby
+          </td>
+          <td>F. Scott Fitzgerald
+          </td>
+          <td>1925
+          </td>
+          <td>200
+          </td>
+          <td>3.927 
+            <sub>(3988285)
+            </sub>
+          </td>
+          <td>1.093
+          </td>
+          <td>68.7 
+            <sub>(8.5)
+            </sub>
+          </td>
+          <td>8.7
+          </td>
+          <td>837
+          </td>
+        </tr>
+        <tr>
+          <td>Jane Eyre
+          </td>
+          <td>Charlotte BrontÃ«
+          </td>
+          <td>1847
+          </td>
+          <td>532
+          </td>
+          <td>4.132 
+            <sub>(1703208)
+            </sub>
+          </td>
+          <td>1.025
+          </td>
+          <td>64.34 
+            <sub>(10.2)
+            </sub>
+          </td>
+          <td>8.07
+          </td>
+          <td>1198
+          </td>
+        </tr>
+        <tr>
+          <td>The Little Prince
+          </td>
+          <td>Antoine de Saint-ExupÃ©ry
+          </td>
+          <td>1943
+          </td>
+          <td>93
+          </td>
+          <td>4.306 
+            <sub>(1487976)
+            </sub>
+          </td>
+          <td>0.912
+          </td>
+          <td>75.5 
+            <sub>(5.9)
+            </sub>
+          </td>
+          <td>7.12
+          </td>
+          <td>1025
+          </td>
+        </tr>
+        <tr>
+          <td>The Hobbit or There and Back Again
+          </td>
+          <td>J.R.R. Tolkien
+          </td>
+          <td>1937
+          </td>
+          <td>366
+          </td>
+          <td>4.277 
+            <sub>(3051947)
+            </sub>
+          </td>
+          <td>0.898
+          </td>
+          <td>82.24 
+            <sub>(5.4)
+            </sub>
+          </td>
+          <td>5.91
+          </td>
+          <td>661
+          </td>
+        </tr>
+        <tr>
+          <td>Animal Farm
+          </td>
+          <td>George Orwell
+          </td>
+          <td>1945
+          </td>
+          <td>141
+          </td>
+          <td>3.959 
+            <sub>(2918138)
+            </sub>
+          </td>
+          <td>1.07
+          </td>
+          <td>70.84 
+            <sub>(7.7)
+            </sub>
+          </td>
+          <td>8.7
+          </td>
+          <td>742
+          </td>
+        </tr>
+        <tr>
+          <td>The Catcher in the Rye
+          </td>
+          <td>J.D. Salinger
+          </td>
+          <td>1951
+          </td>
+          <td>277
+          </td>
+          <td>3.809 
+            <sub>(2863225)
+            </sub>
+          </td>
+          <td>1.317
+          </td>
+          <td>75.81 
+            <sub>(5.8)
+            </sub>
+          </td>
+          <td>6.42
+          </td>
+          <td>1083
+          </td>
+        </tr>
+        <tr>
+          <td>The Picture of Dorian Gray
+          </td>
+          <td>Oscar Wilde
+          </td>
+          <td>1890
+          </td>
+          <td>272
+          </td>
+          <td>4.09 
+            <sub>(1038433)
+            </sub>
+          </td>
+          <td>0.874
+          </td>
+          <td>77.84 
+            <sub>(5.0)
+            </sub>
+          </td>
+          <td>6.18
+          </td>
+          <td>665
+          </td>
+        </tr>
+        <tr>
+          <td>Lord of the Flies
+          </td>
+          <td>William Golding
+          </td>
+          <td>1954
+          </td>
+          <td>182
+          </td>
+          <td>3.69 
+            <sub>(2367342)
+            </sub>
+          </td>
+          <td>1.261
+          </td>
+          <td>75.3 
+            <sub>(6.0)
+            </sub>
+          </td>
+          <td>8.22
+          </td>
+          <td>727
+          </td>
+        </tr>
+        <tr>
+          <td>Wuthering Heights
+          </td>
+          <td>Emily BrontÃ«
+          </td>
+          <td>1847
+          </td>
+          <td>464
+          </td>
+          <td>3.865 
+            <sub>(1412599)
+            </sub>
+          </td>
+          <td>1.26
+          </td>
+          <td>72.97 
+            <sub>(6.9)
+            </sub>
+          </td>
+          <td>6.84
+          </td>
+          <td>1342
+          </td>
+        </tr>
+        <tr>
+          <td>Little Women
+          </td>
+          <td>Louisa May Alcott
+          </td>
+          <td>1868
+          </td>
+          <td>449
+          </td>
+          <td>4.098 
+            <sub>(1761084)
+            </sub>
+          </td>
+          <td>0.991
+          </td>
+          <td>64.34 
+            <sub>(10.2)
+            </sub>
+          </td>
+          <td>8.54
+          </td>
+          <td>806
+          </td>
+        </tr>
+        <tr>
+          <td>The Hitchhiker's Guide to the Galaxy
+          </td>
+          <td>Douglas Adams
+          </td>
+          <td>1979
+          </td>
+          <td>193
+          </td>
+          <td>4.219 
+            <sub>(1515189)
+            </sub>
+          </td>
+          <td>0.959
+          </td>
+          <td>67.28 
+            <sub>(9.0)
+            </sub>
+          </td>
+          <td>8.99
+          </td>
+          <td>853
+          </td>
+        </tr>
+        <tr>
+          <td>Of Mice and Men
+          </td>
+          <td>John Steinbeck
+          </td>
+          <td>1937
+          </td>
+          <td>103
+          </td>
+          <td>3.883 
+            <sub>(2032830)
+            </sub>
+          </td>
+          <td>1.066
+          </td>
+          <td>84.17 
+            <sub>(4.6)
+            </sub>
+          </td>
+          <td>6.08
+          </td>
+          <td>1039
+          </td>
+        </tr>
+        <tr>
+          <td>Brave New World
+          </td>
+          <td>Aldous Huxley
+          </td>
+          <td>1932
+          </td>
+          <td>268
+          </td>
+          <td>3.99 
+            <sub>(1512868)
+            </sub>
+          </td>
+          <td>0.995
+          </td>
+          <td>59.19 
+            <sub>(8.0)
+            </sub>
+          </td>
+          <td>9.09
+          </td>
+          <td>620
+          </td>
+        </tr>
+        <tr>
+          <td>Gone with the Wind
+          </td>
+          <td>Margaret Mitchell
+          </td>
+          <td>1936
+          </td>
+          <td>1037
+          </td>
+          <td>4.296 
+            <sub>(1104859)
+            </sub>
+          </td>
+          <td>0.948
+          </td>
+          <td>74.08 
+            <sub>(6.4)
+            </sub>
+          </td>
+          <td>6.55
+          </td>
+          <td>878
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script>$(document).ready(function() {
+        $('#example').dataTable({
+          'sPaginationType': 'full_numbers'}
+                               );
+      }
+                             );
+    </script>
+  </body>
+</html> 
